@@ -1,5 +1,5 @@
 {
-    "title": "New Age",
+    "title": "Lawn Admin",
     "name": "startbootstrap-new-age",
     "version": "6.0.5",
     "scripts": {
@@ -27,7 +27,7 @@
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Lawn Admin",
     "contributors": [
         "David Miller (https://davidmiller.io/)"
     ],

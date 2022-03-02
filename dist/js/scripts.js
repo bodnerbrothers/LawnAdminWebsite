@@ -1,6 +1,6 @@
 /*!
-* Start Bootstrap - New Age v6.0.5 (https://startbootstrap.com/theme/new-age)
-* Copyright 2013-2021 Start Bootstrap
+* Start Bootstrap - Lawn Admin v6.0.5 (https://startbootstrap.com/theme/new-age)
+* Copyright 2013-2022 Lawn Admin
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
 */
 //
