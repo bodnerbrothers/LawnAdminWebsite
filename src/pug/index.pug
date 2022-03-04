@@ -13,7 +13,10 @@ html(lang='en')
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
         // Bootstrap icons
-        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        
+        
 
         // Google fonts
         link(rel='preconnect', href='https://fonts.gstatic.com')
@@ -39,10 +42,12 @@ html(lang='en')
                             a.nav-link.me-lg-3(href='#features') Features
                         li.nav-item
                             a.nav-link.me-lg-3(href='#download') Download
-                    button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(data-bs-toggle='modal', data-bs-target='#feedbackModal')
+                    //- a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://startbootstrap.com/theme/new-age', target='_blank') Download for free
+                    a.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(href='mailto:support@lawnadmin.com', target='_blank') 
                         span.d-flex.align-items-center
                             i.bi-chat-text-fill.me-2
                             span.small Send Feedback
+                    
 
         // Mashead header
         header.masthead
@@ -71,8 +76,9 @@ html(lang='en')
                                         // * * This can be a video, image, or just about anything else.
                                         // * * Set the max width of your media to 100% and the height to
                                         // * * 100% like the demo example below.
-                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
-                                            source(src='assets/img/demo-screen.mp4', type='video/mp4')
+                                        image <img src="assets\img\Use.png" alt="App" style="width:100%;height:100%;">
+                                        //- video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                        //-     source(src='assets\img\Use.png', type='image/png')
 
         // Quote/testimonial aside
         aside.text-center.bg-gradient-primary-to-secondary
@@ -80,7 +86,8 @@ html(lang='en')
                 .row.gx-5.justify-content-center
                     .col-xl-8
                         .h2.fs-1.text-white.mb-4 “An intuitive solution designed for a prosperous industry becoming increasingly more reliant on technology!”
-                        img(src='assets/img/tnw-logo.svg', alt='...', style='height: 3rem;')
+                        .h4.fw-normal.text-white.mb-4 - Bodner Brothers Lawncare
+                 
 
         // App features section
         section#features
@@ -92,28 +99,28 @@ html(lang='en')
                                 .col-md-6.mb-5
                                     // Feature item
                                     .text-center
-                                        i.bi-phone.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Device Mockups
-                                        p.text-muted.mb-0 Ready to use HTML/CSS device mockups, no Photoshop required!
+                                        i.bi-calendar-event.icon-feature
+                                        h3.font-alt Google Calendar Integration
+                                        p.text-muted.mb-0 Ensure all your jobs are scheduled with reminders and alerts so all employees can stay up to date!
                                 .col-md-6.mb-5
                                     // Feature item
                                     .text-center
-                                        i.bi-camera.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Flexible Use
-                                        p.text-muted.mb-0 Put an image, video, animation, or anything else in the screen!
+                                        i.bi-receipt.icon-feature
+                                        h3.font-alt Invoice Tracking 
+                                        p.text-muted.mb-0 Decrease time spent on adding up past due invoices with LawnAdmin's customer outstanding balance tool
                             .row
                                 .col-md-6.mb-5.mb-md-0
                                     // Feature item
                                     .text-center
-                                        i.bi-gift.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Free to Use
-                                        p.text-muted.mb-0 As always, this theme is free to download and use for any purpose!
+                                        i.bi-envelope.icon-feature
+                                        h3.font-alt Email Invoices
+                                        p.text-muted.mb-0 Increase productivity by customer email invoice notifications!
                                 .col-md-6
                                     // Feature item
                                     .text-center
-                                        i.bi-patch-check.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Open Source
-                                        p.text-muted.mb-0 Since this theme is MIT licensed, you can use it commercially!
+                                        i.bi-wrench.icon-feature
+                                        h3.font-alt Equipment Records
+                                        p.text-muted.mb-0 Record equipment maintenance to keep your fleet running!
                     .col-lg-4.order-lg-0
                         // Features section device mockup
                         .features-device-mockup
@@ -127,29 +134,31 @@ html(lang='en')
                                         // * * This can be a video, image, or just about anything else.
                                         // * * Set the max width of your media to 100% and the height to
                                         // * * 100% like the demo example below.
-                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
-                                            source(src='assets/img/demo-screen.mp4', type='video/mp4')
+
+                                        //insert use.png here
+                                        
+                                        image <img src="assets\img\Use2.png" alt="App" style="width:100%;height:100%;">
 
         // Basic features section
         section.bg-light
             .container.px-5
                 .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
                     .col-12.col-lg-5
-                        h2.display-4.lh-1.mb-4 Enter a new age of web design
-                        p.lead.fw-normal.text-muted.mb-5.mb-lg-0 This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.
+                        h2.display-4.lh-1.mb-4 Enter a new age of landscaping
+                        p.lead.fw-normal.text-muted.mb-5.mb-lg-0LawnAdmin Lawn Admin is a landscape business application that assists with essential administrative responsibilities by increasing internal efficiency through; email invoicing, estimate follow-ups, organized scheduling and equipment maintenance logs. Unlike Yardbook, this application is available as a mobile application or on the web. LawnAdmin users have a desire to reduce the amount of time spent on “tedious work” throughout the day, regarding administrative responsibilities. The owners of these small landscape businesses want to decrease the amount of time they spend completing the administrative activities of their business and more time addressing customer needs or growing their business. 
                     .col-sm-8.col-md-6
                         .px-5.px-sm-0
-                            img.img-fluid.rounded-circle(src='https://source.unsplash.com/u8Jn2rzYIps/900x900', alt='...')
+                        image <img src="assets\img\Usem2.png" alt="App" style="width:110%;height:110%;">
 
         // Call to action section
         section.cta
             .cta-content
                 .container.px-5
                     h2.text-white.display-1.lh-1.mb-4
-                        | Stop waiting.
+                        |Get out of the office
                         br
-                        | Start building.
-                    a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://startbootstrap.com/theme/new-age', target='_blank') Download for free
+                        |and on to the mower!
+                    a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='', target='_blank') Download for free
 
         // App badge section
         section#download.bg-gradient-primary-to-secondary
