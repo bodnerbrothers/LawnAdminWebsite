@@ -32,7 +32,7 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                     </ul>
-                    <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="mailto:support@lawnadmin.com" target="_blank">
+                    <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="#contactForm">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
                             <span class="small">Send Feedback</span>
@@ -216,6 +216,7 @@
                     </div>
                     <div class="col-lg-6">
                         <!-- Contact form-->
+                        <!-- link to formspree.io-->
                         <form id="contactForm" action="https://formspree.io/f/meqdayra" method="POST">
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required="" />
@@ -231,7 +232,7 @@
                             </div>
                             <!-- add toggle to subscribe to newsletter-->
                             <div class="form-check mb-3">
-                                <input class="form-check-input" id="subscribeCheck" type="checkbox" value="" />
+                                <input class="form-check-input" id="subscribeCheck" name="subscribeCheck" type="checkbox" value="yes" />
                                 <label class="form-check-label" for="subscribeCheck">Subscribe to our newsletter</label>
                             </div>
                             <div class="d-none alert alert-success alert-dismissible fade show" role="alert">

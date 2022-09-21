@@ -43,7 +43,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.me-lg-3(href='#download') Download
                     //- a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://startbootstrap.com/theme/new-age', target='_blank') Download for free
-                    a.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(href='mailto:support@lawnadmin.com', target='_blank') 
+                    a.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(href='#contactForm') 
                         span.d-flex.align-items-center
                             i.bi-chat-text-fill.me-2
                             span.small Send Feedback
@@ -187,9 +187,11 @@ html(lang='en')
 
                             // add toggle to subscribe to newsletter
                             .form-check.mb-3
-                                input.form-check-input#subscribeCheck(type='checkbox', value='')
+                                input.form-check-input#subscribeCheck(name='subscribeCheck', type='checkbox', value='yes')
                                 label.form-check-label(for='subscribeCheck') Subscribe to our newsletter
                            
+
+
                             .d-none.alert.alert-success.alert-dismissible.fade.show(role='alert')
                                 .d-flex
                                     .flex-grow-1
