@@ -174,42 +174,43 @@ html(lang='en')
                     .col-lg-6
                         // Contact form
                         // link to formspree.io
-                        form#contactForm(action='https://formspree.io/f/meqdayra', method='POST')
+                        //"https://lawnadmin.us13.list-manage.com/subscribe/post?u=6a313221c43fa9e76c5c83d78&amp;id=f740194c97&amp;f_id=006c3ee3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate 
+                        //form#contactForm(action='https://formspree.io/f/meqdayra', method='POST')
+                        form#contactForm(action="https://lawnadmin.us13.list-manage.com/subscribe/post?u=6a313221c43fa9e76c5c83d78&amp;id=f740194c97&amp;f_id=006c3ee3f0", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate).cs-subscribe-form.validate
                             .form-floating.mb-3
-                                input.form-control#name(name='name', type='text', placeholder='Enter your name...', required='')
+                                input.form-control#name(type="name", name="FNAME", placeholder="Your email", required='').form-control.prepended-form-control
                                 label(for='name') Name
                             .form-floating.mb-3
-                                input.form-control#email(name='email', type='email',placeholder='Enter your name...', required='')
+                                input.form-control#email(type="email", name="EMAIL", placeholder="Your email", required='').form-control.prepended-form-control
                                 label(for='email') Email address
                             .form-floating.mb-3
-                                textarea.form-control#message(name='message', placeholder='Enter your message here...', style='height: 10rem', required='')
+                                textarea.form-control#message(type="text", name="DESCRIPT", placeholder="Your message", required='').form-control.prepended-form-control
                                 label(for='message') Message
 
                             // add toggle to subscribe to newsletter
                             .form-check.mb-3
-                                input.form-check-input#subscribeCheck(name='subscribeCheck', type='checkbox', value='yes')
+                                input.form-check-input#subscribeCheck(type='checkbox', name='subscribe', value='subscribe')
                                 label.form-check-label(for='subscribeCheck') Subscribe to our newsletter
+                          
+                            // add google recaptcha with api key 6LdYzRAiAAAAAJKNQ-TA2GNimbkBmqjqARgbH35A
+                            .g-recaptcha(data-sitekey="6LdYzRAiAAAAAJKNQ-TA2GNimbkBmqjqARgbH35A")
                            
-
-
-                            .d-none.alert.alert-success.alert-dismissible.fade.show(role='alert')
-                                .d-flex
-                                    .flex-grow-1
-                                        |Your message has been sent!
-                                    button.btn-close(data-bs-dismiss='alert', aria-label='Close')
-                            .d-none.alert.alert-danger.alert-dismissible.fade.show(role='alert')
-                                .d-flex
-                                    .flex-grow-1
-                                        |An error occured and your message could not be sent.
-                                    button.btn-close(data-bs-dismiss='alert', aria-label='Close')
                             .d-grid
-                                 button.btn.btn-primary.btn-xl(type='submit') Send
+                                button.btn.btn-primary.btn-xl(type='submit') Send
+                            .text-center.text-muted.d-block.mt-3
+                                |Or email us at 
+                                a.nav-link.me-lg-3(href='mailto:gchemmes@test.com') Lawnadmin@gmail.com
+                          
+                            // Submit status
+                            .d-none.alert.alert-success.text-center.py-3
+                                | Your message has been sent. Thank you!
+                            .d-none.alert.alert-danger.text-center.py-3
+                                | An error occured while sending your message. Please try again later.
 
-                                
-                                  
+                      
 
-                   
-                            
+
+                       
 
         // App badge section
         section#download.bg-gradient-primary-to-secondary
