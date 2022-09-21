@@ -32,7 +32,7 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                     </ul>
-                    <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="#contactForm">
+                    <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="#contact">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
                             <span class="small">Send Feedback</span>
@@ -219,17 +219,17 @@
                         <!-- link to formspree.io-->
                         <!--"https://lawnadmin.us13.list-manage.com/subscribe/post?u=6a313221c43fa9e76c5c83d78&amp;id=f740194c97&amp;f_id=006c3ee3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate -->
                         <!--form#contactForm(action='https://formspree.io/f/meqdayra', method='POST')-->
-                        <form class="cs-subscribe-form validate" id="contactForm" action="https://lawnadmin.us13.list-manage.com/subscribe/post?u=6a313221c43fa9e76c5c83d78&amp;amp;id=f740194c97&amp;amp;f_id=006c3ee3f0" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                        <form id="contactForm" action="https://lawnadmin.us13.list-manage.com/subscribe/post?u=6a313221c43fa9e76c5c83d78&amp;amp;id=f740194c97&amp;amp;f_id=006c3ee3f0" method="POST">
                             <div class="form-floating mb-3">
-                                <input class="form-control form-control prepended-form-control" id="name" type="name" name="FNAME" placeholder="Your email" required="" />
+                                <input class="form-control" id="name" type="name" name="FNAME" placeholder="Your email" required="" />
                                 <label for="name">Name</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control form-control prepended-form-control" id="email" type="email" name="EMAIL" placeholder="Your email" required="" />
+                                <input class="form-control" id="email" type="email" name="EMAIL" placeholder="Your email" required="" />
                                 <label for="email">Email address</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control form-control prepended-form-control" id="message" type="text" name="DESCRIPT" placeholder="Your message" required=""></textarea>
+                                <textarea class="form-control" id="message" type="text" name="DESCRIPT" placeholder="Your message"></textarea>
                                 <label for="message">Message</label>
                             </div>
                             <!-- add toggle to subscribe to newsletter-->
@@ -238,16 +238,14 @@
                                 <label class="form-check-label" for="subscribeCheck">Subscribe to our newsletter</label>
                             </div>
                             <!-- add google recaptcha with api key 6LdYzRAiAAAAAJKNQ-TA2GNimbkBmqjqARgbH35A-->
-                            <div class="g-recaptcha" data-sitekey="6LdYzRAiAAAAAJKNQ-TA2GNimbkBmqjqARgbH35A"></div>
+                            <div class="g-recaptcha" data-sitekey="6LdYzRAiAAAAAJKNQ-TA2GNimbkBmqjqARgbH35A" text="I'm not a robot"></div>
                             <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit">Send</button></div>
                             <div class="text-center text-muted d-block mt-3">
                                 Or email us at
                                 <a class="nav-link me-lg-3" href="mailto:gchemmes@test.com">Lawnadmin@gmail.com</a>
                             </div>
-                            <!-- Submit status-->
-                            <div class="d-none alert alert-success text-center py-3">Your message has been sent. Thank you!</div>
-                            <div class="d-none alert alert-danger text-center py-3">An error occured while sending your message. Please try again later.</div>
                         </form>
+                        <!-- connect to mailchimp with b9c088eeb271c4c842df257589dead3c-us13-->
                     </div>
                 </div>
             </div>
