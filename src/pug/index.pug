@@ -62,7 +62,7 @@ html(lang='en')
                                 a.me-lg-3.mb-4.mb-lg-0(href='#!')
                                     img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
                                 a(href='#!')
-                                    img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
+                                    img.app-badge(src='assets/img/app-store-badge.svg', alt='...')    
                     .col-lg-6
                         // Masthead device mockup feature
                         .masthead-device-mockup
@@ -160,6 +160,53 @@ html(lang='en')
                         br
                         |and on to the mower!
                     a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='', target='_blank') Download for free
+
+        // Contact section
+        section#contact
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-lg-8.col-xl-6.text-center
+                        h2.display-4.lh-1.mb-4 Contact us
+                        p.lead.fw-normal.text-muted.mb-5
+                            |Have questions? We have answers. 
+                            br
+                            |Send us a message and we will respond as soon as possible!
+                    .col-lg-6
+                        // Contact form
+                        form#contactForm(action='https://formspree.io/f/xvodqzjy', method='POST')
+                            .form-floating.mb-3
+                                input.form-control#name(name='name', type='text', placeholder='Enter your name...', required='')
+                                label(for='name') Name
+                            .form-floating.mb-3
+                                input.form-control#email(name='email', type='email',placeholder='Enter your name...', required='')
+                                label(for='email') Email address
+                            .form-floating.mb-3
+                                textarea.form-control#message(name='message', placeholder='Enter your message here...', style='height: 10rem', required='')
+                                label(for='message') Message
+
+                            // add toggle to subscribe to newsletter
+                            .form-check.mb-3
+                                input.form-check-input#subscribeCheck(type='checkbox', value='')
+                                label.form-check-label(for='subscribeCheck') Subscribe to our newsletter
+                           
+                            .d-none.alert.alert-success.alert-dismissible.fade.show(role='alert')
+                                .d-flex
+                                    .flex-grow-1
+                                        |Your message has been sent!
+                                    button.btn-close(data-bs-dismiss='alert', aria-label='Close')
+                            .d-none.alert.alert-danger.alert-dismissible.fade.show(role='alert')
+                                .d-flex
+                                    .flex-grow-1
+                                        |An error occured and your message could not be sent.
+                                    button.btn-close(data-bs-dismiss='alert', aria-label='Close')
+                            .d-grid
+                                 button.btn.btn-primary.btn-xl(type='submit') Send
+
+                                
+                                  
+
+                   
+                            
 
         // App badge section
         section#download.bg-gradient-primary-to-secondary

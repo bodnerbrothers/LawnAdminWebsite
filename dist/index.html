@@ -184,7 +184,7 @@
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"></div>
-                        <image><img src="assets\img\Usem2.webp" alt="App" style="width: 130%; height: 130%; padding-right: 23%" /></image>
+                        <image><img src="assets\img\Usem2.webp" alt="App" style="width: 130%; height: 130%; padding-right: 25%" /></image>
                     </div>
                 </div>
             </div>
@@ -199,6 +199,56 @@
                         and on to the mower!
                     </h2>
                     <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="" target="_blank">Download for free</a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section-->
+        <section id="contact">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="display-4 lh-1 mb-4">Contact us</h2>
+                        <p class="lead fw-normal text-muted mb-5">
+                            Have questions? We have answers.
+                            <br />
+                            Send us a message and we will respond as soon as possible!
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Contact form-->
+                        <form id="contactForm" action="https://formspree.io/f/xvodqzjy" method="POST">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required="" />
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" name="email" type="email" placeholder="Enter your name..." required="" />
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required=""></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <!-- add toggle to subscribe to newsletter-->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" id="subscribeCheck" type="checkbox" value="" />
+                                <label class="form-check-label" for="subscribeCheck">Subscribe to our newsletter</label>
+                            </div>
+                            <div class="d-none alert alert-success alert-dismissible fade show" role="alert">
+                                <div class="d-flex">
+                                    <div class="flex-grow-1">Your message has been sent!</div>
+                                    <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="d-none alert alert-danger alert-dismissible fade show" role="alert">
+                                <div class="d-flex">
+                                    <div class="flex-grow-1">An error occured and your message could not be sent.</div>
+                                    <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit">Send</button></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
